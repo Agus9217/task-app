@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --purple: purple;
+    --violet: violet;
+    --fuchsia: fuchsia;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--black);
+    color: var(--white);
+}
+
+.main {
+    padding: 50px 0;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.main-parrafo {
+    width: 50%;
+    padding: 5px 0;
+}
+
+.form {
+    width: 50%;
+    border-right: 2px solid var(--white);
+}
+
+.form-main {
+    display: flex;
+    gap: 40px;
+    padding-bottom: 20px;
+}
+
+.form-column-label {
+    padding: 20px 0;
+}
+
+.form-column-input {
+    padding: 2px;
+    text-align: center;
+    width: 100%;
+    background: var(--black);
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    color: var(--white);
+    color-scheme: dark;
+}
+
+.form-column-input[type="date"]::-webkit-calendar-picker-indicator {
+    position: relative;
+    text-align: center;
+    right: 15%;
+    top: 0;
+    font-size: 17px;
+}
+
+.form-column-input[type="time"]::-webkit-calendar-picker-indicator {
+    position: relative;
+    text-align: center;
+    right: 15%;
+    top: 0;
+    font-size: 17px;
+}
+
+
+
+.form-column-input:focus {
+    box-shadow: 1px 1px 20px var(--fuchsia);
+}
+
+.btn-form {
+    text-align: end;
+    padding: 30px;
+}
+
+.btn-form > button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background: var(--purple);
+    border: none;
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.btn-form > button:hover {
+    background: var(--violet);
+}
+
+.cantidad-personas, .herramientas {
+    padding: 30px 0 0 0;
+}
+
+.cantidad-personas input[type="radio"] {
+    accent-color: var(--fuchsia);
+}
+
+.herramientas input[type="checkbox"] {
+    accent-color: var(--fuchsia);
+}
+
+
+
+

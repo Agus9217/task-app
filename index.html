@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <form action="" class="form">
+            <div>
+                <h1 class="main-titulo">¡Carga de turnos!</h1>
+                <p class="main-parrafo">A continuación debes dejar los datos del turno reservado</p>
+            </div>
+            <div class="form-main">
+                <div class="form-column">
+                    <div class="form-column-label">
+                        <label for="">Nombre</label>
+                    </div>
+                    <div>
+                        <input type="text" class="form-column-input" />
+                    </div>
+                    <div class="form-column-label">
+                        <label for="">Fecha</label>
+                    </div>
+                    <div>
+                        <input type="date" value="2022-08-31" class="form-column-input" />
+                    </div>
+                    <div class="form-column-label">
+                        <label for="">Correo electrónico</label>
+                    </div>
+                    <div>
+                        <input type="email" class="form-column-input" />
+                    </div>
+                </div>
+                <div class="form-column">
+                    <div class="form-column-label">
+                        <label for="">Apellido</label>
+                    </div>
+                    <div>
+                        <input type="text" class="form-column-input" />
+                    </div>
+                    <div class="form-column-label">
+                        <label for="">Hora</label>
+                    </div>
+                    <div>
+                        <input type="time" min="08:00" max="19:00" class="form-column-input" />
+                    </div>
+                    <div class="form-column-label">
+                        <label for="">Teléfono</label>
+                    </div>
+                    <div>
+                        <input type="tel" class="form-column-input" />
+                    </div>
+                </div>
+            </div>
+            <div class="cantidad-personas">
+                <p>¿Cantidad de personas?</p>
+                <div>
+                    <input type="radio" checked name="persona" id="menos-cinco" value="menos-cinco" />
+                    <label for="menos-cinco">Menos de 5</label>
+                </div>
+                <div>
+                    <input type="radio" name="persona" id="entre-cinco-diez" value="entre-cinco-diez" />
+                    <label for="entre-cinco-diez">Entre 5 y 10</label>
+                </div>
+                <div>
+                    <input type="radio" name="persona" id="mas-de-diez" value="mas-de-diez" />
+                    <label for="mas-de-diez">Mas de 10</label>
+                </div>
+            </div>
+            <div class="herramientas">
+                <p>Herramientas extras</p>
+                <div>
+                    <input type="checkbox" checked id="computadora" />
+                    <label for="computadora">Computadora</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="camara" />
+                    <label for="camara">Cámara</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="parlantes" />
+                    <label for="parlantes">Parlantes</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="proyector" />
+                    <label for="proyector">Proyector/Pizarra</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="sala" />
+                    <label for="sala">Sala de reunión privada</label>
+                </div>
+            </div>
+            <div class="btn-form">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
