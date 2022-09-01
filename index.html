@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="main">
-        <form action="" class="form">
+        <form action="" class="form" id="form">
             <div>
                 <h1 class="main-titulo">¡Carga de turnos!</h1>
                 <p class="main-parrafo">A continuación debes dejar los datos del turno reservado</p>
@@ -26,7 +26,7 @@
                         <label for="">Fecha</label>
                     </div>
                     <div>
-                        <input type="date" value="2022-08-31" class="form-column-input" />
+                        <input type="date" name="date" id="date" class="form-column-input" />
                     </div>
                     <div class="form-column-label">
                         <label for="">Correo electrónico</label>
@@ -46,7 +46,7 @@
                         <label for="">Hora</label>
                     </div>
                     <div>
-                        <input type="time" min="08:00" max="19:00" class="form-column-input" />
+                        <input type="time" min="08:00" max="19:00" value="09:00" class="form-column-input" />
                     </div>
                     <div class="form-column-label">
                         <label for="">Teléfono</label>
@@ -98,6 +98,25 @@
                 <button type="submit">Enviar</button>
             </div>
         </form>
+        <!-- <div class="card">
+            <div class="card-body">
+                <div class="card-header">
+                    <h3 class="card-titulo">Orden N°1: Justin</h3>
+                    <div class="card-icons">
+                        <i class="bi bi-envelope"></i>
+                        <i class="bi bi-telephone-fill"></i>
+                    </div>
+                </div>
+                <p class="card-cantidad-personas">Menos de 5</p>
+                <p class="card-herramientas">Extra: Computadora, Cámara, Parlantes, Proyector/Pizarra, Sala de reunión privada</p>
+                <div class="card-date-time">
+                    <span class="card-date">01/09/2022</span><span class="card-time">10:00 HS</span>
+                </div>
+            </div>
+        </div> -->
     </div>
+    <script src="./assets/main.js"></script>
+    <script src="./assets/validation.js"></script>
+    <script src="./assets/utils.js"></script>
 </body>
 </html>
